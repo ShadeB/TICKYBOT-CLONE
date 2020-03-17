@@ -18,6 +18,7 @@ body {
   background: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
 nav {
@@ -34,7 +35,6 @@ ul {
 
 ul li {
   display: inline-block;
-  cursor: pointer;
 }
 
 ul li:focus {
@@ -54,8 +54,50 @@ ul li a {
   text-decoration: none;
 }
 
+a {
+  cursor: pointer;
+}
+
 h1, h2 {
   color: rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+}
+
+.hero {
+  background-color: rgb(65, 171, 221);
+  font-size: 2.75rem;
+  padding: 2rem 1.4rem;
+}
+
+.hero--description {
+  text-align: center;
+}
+
+.hero--heading {
+  font-size: 6.3rem;
+  line-height: 1.6;
+}
+
+.hero--description p {
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.cta-link {
+  background: #fff;
+  border-radius: 0.3rem;
+  padding: 1.5rem 4rem;
+  display: inline-flex;
+  margin-bottom: 4rem;
+}
+
+.cta-link img {
+  width: 4rem;
+  margin-right: 2rem;
+}
+
+.tickybot {
+  text-align: center;
 }
 
 .container {
