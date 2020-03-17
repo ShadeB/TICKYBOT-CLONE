@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Signika&display=swap');
 
+:root {
+  --primary-color: rgba(0, 0, 0, 0.8);
+  --primary-bg-color: rgba(11, 35, 77, 0.75);
+  --secondary-bg-color: rgb(65, 171, 221);
+  --color-white: rgba(255, 255, 255, 1);
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -22,7 +29,7 @@ body {
 }
 
 nav {
-  background: rgba(11, 35, 77, 0.75);
+  background: var(--primary-bg-color);
 }
 
 ul {
@@ -42,7 +49,7 @@ ul li:focus {
 }
 
 ul li:hover, ul li:focus {
-  color: #fff;
+  color: var(--color-white);
 }
 
 ul li:not(:last-child) {
@@ -64,7 +71,7 @@ h1, h2 {
 }
 
 .hero {
-  background-color: rgb(65, 171, 221);
+  background-color: var(--secondary-bg-color);
   font-size: 2.75rem;
   padding: 2rem 1.4rem;
 }
@@ -80,11 +87,11 @@ h1, h2 {
 
 .hero--description p {
   margin-bottom: 4rem;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .cta-link {
-  background: #fff;
+  background: var(--color-white);
   border-radius: 0.3rem;
   padding: 1.5rem 4rem;
   display: inline-flex;
