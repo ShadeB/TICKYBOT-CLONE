@@ -67,6 +67,7 @@ a {
 
 h1, h2 {
   color: rgba(0, 0, 0, 0.5);
+  text-transform: capitalize;
   font-weight: 300;
 }
 
@@ -107,9 +108,47 @@ h1, h2 {
   text-align: center;
 }
 
+.grid--layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 4rem;
+}
+
+.grid--layout *:nth-child(1) {
+  grid-column: 1 / -1;
+}
+
+.grid--layout *:nth-child(4) {
+  grid-column: 1 / -1;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
   margin: auto;
   padding: 0 2rem;
+}
+
+.layout {
+  padding: 3rem 2.5rem;
+  font-size: 2rem;
+}
+
+.section--heading {
+  text-align: center;
+  font-size: 3.5rem;
+  color: rgba(0, 0, 0, 0.76);
+  position: relative;
+}
+
+.section--heading::after {
+  content: '';
+  background-color: var(--secondary-bg-color);
+  width: 16rem;
+  height: 0.3rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
 }
