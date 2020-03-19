@@ -142,6 +142,21 @@ h1, h2 {
   text-align: center;
 }
 
+.secondary--cta--link {
+  background-color: var(--primary-bg-color);
+  color: var(--color-white);
+  padding: 1.6rem 5rem;
+  font-size: 2.54rem;
+  margin: 4rem auto;
+}
+
+.main--cta {
+  display: grid;
+  grid-gap: 5rem;
+  padding: 0 9rem;
+  text-align: center;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
