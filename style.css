@@ -110,7 +110,6 @@ h1, h2 {
 
 .grid--layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 4rem;
 }
 
@@ -123,12 +122,16 @@ h1, h2 {
   grid-column: 1 / -1;
 }
 
-.grid--layout *:nth-child(4) {
+.product--about *:nth-child(4) {
   grid-column: 1 / -1;
 }
 
 .showcase {
   background: rgba(112, 195, 140, 0.7);
+}
+
+.showcase--grid {
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
 }
 
 .card {
@@ -209,5 +212,20 @@ h1, h2 {
 
   .product--about * {
     margin-bottom: 2.6rem;
+  }
+
+  .showcase--grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .showcase--grid > * {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .showcase--grid *:nth-child(4) {
+    grid-column: 1 / -1;
   }
 }
