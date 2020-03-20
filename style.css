@@ -114,6 +114,11 @@ h1, h2 {
   grid-gap: 4rem;
 }
 
+.product--about {
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  grid-gap: 2.6rem;
+}
+
 .grid--layout *:nth-child(1) {
   grid-column: 1 / -1;
 }
@@ -174,7 +179,7 @@ h1, h2 {
 
 .layout {
   padding: 3rem 2.5rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .section--heading {
@@ -194,4 +199,15 @@ h1, h2 {
   left: 50%;
   right: 50%;
   transform: translateX(-50%);
+}
+
+@media (max-width: 720px) {
+  .product--about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product--about * {
+    margin-bottom: 2.6rem;
+  }
 }
