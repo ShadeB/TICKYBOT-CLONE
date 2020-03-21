@@ -153,16 +153,18 @@ h1, h2 {
 .secondary--cta--link {
   background-color: var(--primary-bg-color);
   color: var(--color-white);
-  padding: 1.6rem 5rem;
   font-size: 2.54rem;
-  margin: 4rem auto;
+  margin: 8rem auto;
 }
 
 .main--cta {
-  display: grid;
-  grid-gap: 5rem;
-  padding: 0 9rem;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+
+.main--cta .section--heading {
+  margin-bottom: 4.5rem;
 }
 
 .footer {
@@ -178,6 +180,10 @@ h1, h2 {
   max-width: 1200px;
   margin: auto;
   padding: 0 2rem;
+}
+
+.container--main--cta {
+  max-width: 500px;
 }
 
 .layout {
