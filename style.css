@@ -28,7 +28,7 @@ body {
   font-weight: 300;
 }
 
-nav {
+header {
   background: var(--primary-bg-color);
 }
 
