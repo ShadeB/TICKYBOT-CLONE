@@ -316,3 +316,39 @@ h1, h2 {
     grid-column: 1 / -1;
   }
 }
+
+.head {
+	animation: head 15s infinite linear;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes head {
+	0% {
+		transform: rotateZ(-10deg);
+	}
+
+	20% {
+		transform: rotateZ(0deg);
+	}
+
+	40% {
+		transform: scale(0.9);
+	}
+	
+	50% {
+		transform: rotateZ(0deg);
+	}
+
+	60% {
+		transform: rotateZ(15deg);
+	}
+
+	80% {
+		transform: rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateZ(-10deg);
+	}
+}
