@@ -15,6 +15,7 @@ function debounce(func, wait = 20, immediate = true) {
 
 const btnScrollTop = document.querySelector('#scroll-to-top');
 const showcase = document.querySelector('.showcase');
+const fadedout = document.querySelectorAll('.faded-out');
 
 const scrollAction = () => {
 	//check if the showcase section has been scrolled by atleast 20 percent.
@@ -41,3 +42,15 @@ const scrollToTop = () => {
 
 window.addEventListener('scroll', debounce(scrollAction));
 btnScrollTop.addEventListener('click', scrollToTop);
+
+const observer = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		let target = entry.target;
+		if (entry.isIntersecting) {
+			target.classList.add('fade-in');
+		}
+	});
+});
+
+fadedout.forEach(element => observer.observe(element));
+

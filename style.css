@@ -104,12 +104,11 @@ h1, h2 {
   padding: 1.5rem 4rem;
   display: inline-flex;
 	margin-bottom: 4rem;
-	transition: 1s ease;
 }
 
 .cta-link:hover {
 	transform: scale(0.99);
-	opacity: 0.85;
+	opacity: 0.99;
 }
 
 .cta-link img {
@@ -326,6 +325,17 @@ h1, h2 {
   .showcase--grid *:nth-child(4) {
     grid-column: 1 / -1;
   }
+}
+
+.faded-out {
+	opacity: 0;
+	transform: translateY(-2rem);
+	transition: 2s linear;
+}
+
+.fade-in {
+	opacity: 1;
+	transform: translateY(0rem);
 }
 
 .head {
